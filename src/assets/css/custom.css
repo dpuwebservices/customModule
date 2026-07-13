@@ -1,10 +1,11 @@
 /* Body Styles have to add google fonts*/
-body{
-    font-family: "Rethink Sans",sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 900;
-  font-style: normal;
+body {
+    font-family: "Rethink Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
 }
+
 /* Header Styles */
 header.top-bar.header {
     background-color: #003da5 !important;
@@ -14,7 +15,14 @@ header.top-bar.header .header-container {
     background-color: #003da5 !important;
 }
 
-header.top-bar.header,header.top-bar.header a, header.top-bar.header span, header.top-bar.header button, header.top-bar.header.mdc-button_label{
+header.top-bar.header,
+header.top-bar.header a,
+header.top-bar.header span,
+header.top-bar.header button,
+header.top-bar.header mat-icon,
+header.top-bar.header mat-divider.nde-divider.mat-divider-vertical,
+header.top-bar.header .mat-mdc-select-arrow,
+header.top-bar.header.mdc-button_label {
     color: #fff !important;
     fill: #fff;
 }
@@ -23,12 +31,52 @@ header.top-bar.header .header-container {
     align-items: center !important;
 }
 
+header.top-bar.header .header-container nde-main-menu,
+header.top-bar.header .header-container>div {
+    min-width: 0;
+}
+
+header.top-bar.header .header-container>nde-user-panel {
+    min-width: 200px;
+}
+
 header.top-bar.header {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;
     min-height: 100px;
 }
+
+header.top-bar.header .header-container nde-logo {
+    margin-right: 4%;
+}
+
+header.top-bar.header .header-container nde-logo>a>img {
+    height: 46px !important;
+}
+
+header.top-bar.header .main-menu-container {
+    padding-bottom: 9px;
+    margin-left: 10px;
+}
+
+header.top-bar.header nde-user-panel {
+    padding-bottom: 9px;
+}
+
+header.top-bar.header .main-menu-container .mat-mdc-button {
+    padding: 0 2px !important;
+}
+
+header.top-bar.header .main-menu-container mat-divider.nde-divider.mat-divider-vertical {
+    border-right-color: #fff !important;
+}
+
+.mat-icon.grey-icon-color-no-stroke svg g path,
+.mat-icon.grey-icon-color svg path {
+    fill: #fff !important;
+}
+
 /* trying to update logo */
 [data-label="nde.landing.header"] {
     text-indent: -9999px;
@@ -36,4 +84,20 @@ header.top-bar.header {
     background-size: contain;
     height: 60px;
     display: block;
+}
+
+@media (min-width: 1280px) {
+
+    .header-container,
+    .header-container>div {
+        width: clamp(800px, 95%, 1368px) !important;
+    }
+}
+
+@media (min-width: 960px) and (max-width:1279.98px) {
+
+    .header-container,
+    .header-container>div {
+        width: clamp(700px, 95%, 800px) !important;
+    }
 }
