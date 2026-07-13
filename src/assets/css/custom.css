@@ -6,6 +6,11 @@ body {
     font-style: normal;
 }
 
+:root {
+    --mdc-text-button-label-text-font: "Rethink Sans", sans-serif;
+    --mat-sys-label-large-font: "Rethink Sans", sans-serif;
+}
+
 /* Header Styles */
 header.top-bar.header {
     background-color: #003da5 !important;
