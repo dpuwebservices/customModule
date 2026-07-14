@@ -92,6 +92,15 @@ header.top-bar.header .main-menu-container mat-divider.nde-divider.mat-divider-v
     display: block;
 }
 
+/* Resource type font color   */
+   .resource-type-filters-container
+	button.resource-type-items
+    .mdc-button__label {
+      font-weight: bold !important;
+      text-decoration: underline !important;
+	  }
+
+/* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
 
     .header-container,
