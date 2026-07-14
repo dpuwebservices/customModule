@@ -9,6 +9,7 @@ body {
 :root {
     --mdc-text-button-label-text-font: "Rethink Sans", sans-serif;
     --mat-sys-label-large-font: "Rethink Sans", sans-serif;
+    --sys-primary: #003da5;
 }
 
 /* Header Styles */
