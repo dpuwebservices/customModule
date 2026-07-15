@@ -12,6 +12,7 @@ body {
     --sys-primary: #003da5;
     --sys-background: #e5ecf6;
     --sys-inverse-on-surface: #e5ecf6;
+    --sys-primary-container: #e5ecf6;
 }
 
 /* Header Styles */
@@ -95,12 +96,20 @@ header.top-bar.header .mat-icon.grey-icon-color svg path {
 }
 
 /* Resource type font color   */
-   .resource-type-filters-container
+.resource-type-filters-container
 	button.resource-type-items
     .mdc-button__label {
       font-weight: bold !important;
       text-decoration: underline !important;
-	  }
+}
+
+/* reverse order of initials in the user menu */
+.user-area .user-area-logged-in span {
+unicode-bidi: bidi-override;
+direction: rtl;
+display: inline-block !important;
+line-height: 24px;
+}
 
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
