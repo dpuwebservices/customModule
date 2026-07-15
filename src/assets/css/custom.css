@@ -80,8 +80,8 @@ header.top-bar.header .main-menu-container mat-divider.nde-divider.mat-divider-v
     border-right-color: #fff !important;
 }
 
-.mat-icon.grey-icon-color-no-stroke svg g path,
-.mat-icon.grey-icon-color svg path {
+header.top-bar.header .mat-icon.grey-icon-color-no-stroke svg g path,
+header.top-bar.header .mat-icon.grey-icon-color svg path {
     fill: #fff !important;
 }
 
