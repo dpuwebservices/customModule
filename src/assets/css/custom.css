@@ -28,9 +28,13 @@ header.top-bar.header .header-container {
 nde-top-bar {
     background-color: #003da5 !important;
 }
-body:has(.top-bar-background-image) nde-top-bar {
-    background: none !important;
+body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
+    background: #00000080 !important;
 }
+body:has(.top-bar-background-image) nde-top-bar {
+    background: none!important;
+}
+
 
 .mat-elevation-z3, .mat-mdc-elevation-specific.mat-elevation-z3 {
   box-shadow: none !important;
