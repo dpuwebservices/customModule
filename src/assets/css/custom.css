@@ -66,6 +66,7 @@ body:has(.top-bar-background-image) nde-top-bar {
 }
 
 
+
 header.top-bar.header,
 header.top-bar.header a,
 header.top-bar.header span,
@@ -96,6 +97,7 @@ header.top-bar.header .header-container>div {
     min-width: 0;
 }
 
+
 header.top-bar.header .header-container>nde-user-panel {
     min-width: 200px;
 }
@@ -119,6 +121,7 @@ header.top-bar.header .main-menu-container {
     padding-bottom: 9px;
     margin-left: 10px;
 }
+
 
 header.top-bar.header nde-user-panel {
     padding-bottom: 9px;
