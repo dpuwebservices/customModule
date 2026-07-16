@@ -27,12 +27,14 @@ header.top-bar.header .header-container {
 /* make search bar same color as header unless hero image is present */
 nde-top-bar {
     background-color: #003da5 !important;
+    box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
 body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
     background: #00000080 !important;
 }
 body:has(.top-bar-background-image) nde-top-bar {
     background: none!important;
+    box-shadow: none ;
 }
 
 
