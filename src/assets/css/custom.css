@@ -144,6 +144,10 @@ display: inline-block !important;
 line-height: 24px;
 }
 
+.mdc-button.mat-mdc-button.cdk-focused.cdk-keyboard-focused {
+    outline-width: 0px !important;
+}
+
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
 
