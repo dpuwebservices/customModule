@@ -79,7 +79,7 @@ header.top-bar.header.mdc-button_label {
 }
 
 .top-bar-background-image {
-    background-image: url("https://libservices.org/images/library_background.jpeg") !important;
+    background-image: url("../images/library_background.jpeg") !important;
 }
 
 .background-overlay {
