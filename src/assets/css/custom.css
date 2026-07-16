@@ -24,6 +24,19 @@ header.top-bar.header .header-container {
     background-color: #003da5 !important;
 }
 
+/* make search bar same color as header unless hero image is present */
+nde-top-bar {
+    background-color: #003da5 !important;
+}
+body:has(.top-bar-background-image) nde-top-bar {
+    background: none !important;
+}
+
+.mat-elevation-z3, .mat-mdc-elevation-specific.mat-elevation-z3 {
+  box-shadow: none !important;
+}
+
+
 header.top-bar.header,
 header.top-bar.header a,
 header.top-bar.header span,
@@ -100,7 +113,23 @@ header.top-bar.header .mat-icon.grey-icon-color svg path {
 	button.resource-type-items
     .mdc-button__label {
       font-weight: bold !important;
-      text-decoration: underline !important;
+      color: #1c1c1c !important;   
+}
+
+/* Line under resource bar */
+.resource-type-bar>div.flex-row{
+    border-bottom: 1px solid #1c1c1c !important;
+}
+
+/* float chat widget */
+body:has(nde-back-to-top>button:not(.back-to-top-hide)) #s-lch-widget-29547 {
+  bottom:50px!important
+}
+body:has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-29547 {
+  bottom:110px!important
+}
+body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-29547 {
+  bottom:150px!important
 }
 
 /* reverse order of initials in the user menu */
