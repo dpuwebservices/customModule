@@ -37,6 +37,24 @@ body:has(.top-bar-background-image) nde-top-bar {
     box-shadow: none ;
 }
 
+/* lock resource-type filters */
+.resource-type-filters-container {
+    display: block;
+    position:sticky;
+    top:74px;
+    background-color: #fff;
+    z-index: 2;
+    width: 100% !important;
+}
+.search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
+  display: block;
+  width: clamp(1088px,85%,1368px);
+  margin: auto;
+}
+.search-result-content[_ngcontent-ng-c4253737009] .filters-container[_ngcontent-ng-c4253737009] {
+    top: 130px !important;
+}
+
 
 .mat-elevation-z3, .mat-mdc-elevation-specific.mat-elevation-z3 {
   box-shadow: none !important;
