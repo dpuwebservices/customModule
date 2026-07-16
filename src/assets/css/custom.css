@@ -48,7 +48,6 @@ body:has(.top-bar-background-image) nde-top-bar {
 }
 .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
   display: block;
-  width: clamp(1088px,85%,1368px);
   margin: auto;
 }
 .search-result-content[_ngcontent-ng-c4253737009] .filters-container[_ngcontent-ng-c4253737009] {
@@ -80,9 +79,11 @@ header.top-bar.header.mdc-button_label {
 .top-bar-background-image {
     background-image: url("https://libservices.org/images/library_background.jpeg") !important;
 }
+
 .background-overlay {
-    background: none !important;
+    background: #00000080 !important;
 }
+
 
 header.top-bar.header .header-container {
     align-items: center !important;
@@ -186,6 +187,10 @@ line-height: 24px;
     .header-container>div {
         width: clamp(800px, 95%, 1200px) !important;
     }
+    .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
+        width: clamp(1088px,85%,1368px);
+    }
+
 }
 
 @media (min-width: 960px) and (max-width:1279.98px) {
@@ -193,5 +198,21 @@ line-height: 24px;
     .header-container,
     .header-container>div {
         width: clamp(700px, 95%, 800px) !important;
+    }
+    .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
+        width: clamp(912px,85%,1088px);
+    }
+
+}
+@media (min-width: 600px) and (max-width: 959.98px) {
+    
+    .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
+        width: clamp(288px,88.42544317%,848px);
+    }
+
+}
+@media (max-height: 400px) {
+    .resource-type-filters-container {
+        position:static;
     }
 }
