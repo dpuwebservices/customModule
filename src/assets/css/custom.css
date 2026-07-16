@@ -54,6 +54,10 @@ body:has(.top-bar-background-image) nde-top-bar {
 .search-result-content[_ngcontent-ng-c4253737009] .filters-container[_ngcontent-ng-c4253737009] {
     top: 130px !important;
 }
+.search-result-content[_ngcontent-ng-c4253737009] .filters-container[_ngcontent-ng-c4253737009] .filters-wrapper {
+
+    border-bottom: 0.5px solid #1c1c1c !important;
+}
 
 
 .mat-elevation-z3, .mat-mdc-elevation-specific.mat-elevation-z3 {
