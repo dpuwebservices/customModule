@@ -150,13 +150,13 @@ header.top-bar.header .mat-icon.grey-icon-color svg path {
 }
 
 /* float chat widget */
-body:has(nde-back-to-top>button:not(.back-to-top-hide)) #s-lch-widget-29547 {
+body:has(nde-back-to-top>button:not(.back-to-top-hide)) #s-lch-widget-12569 {
   bottom:50px!important
 }
-body:has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-29547 {
+body:has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-12569 {
   bottom:110px!important
 }
-body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-29547 {
+body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-12569 {
   bottom:150px!important
 }
 
