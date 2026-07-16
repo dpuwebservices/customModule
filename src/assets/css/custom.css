@@ -30,7 +30,7 @@ nde-top-bar {
     box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
 body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
-    background: #00000080 !important;
+    background: #000000A0 !important;
 }
 body:has(.top-bar-background-image) nde-top-bar {
     background: none!important;
@@ -75,6 +75,13 @@ header.top-bar.header .mat-mdc-select-arrow,
 header.top-bar.header.mdc-button_label {
     color: #fff !important;
     fill: #fff;
+}
+
+.top-bar-background-image {
+    background-image: url("https://libservices.org/images/library_background.jpeg") !important;
+}
+.background-overlay {
+    background: none !important;
 }
 
 header.top-bar.header .header-container {
