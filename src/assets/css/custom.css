@@ -105,12 +105,27 @@ body {
 }
 
 /* Header Styles */
-header.top-bar.header {
+
+/* banner color */
+header.top-bar.header,
+header.top-bar.header .header-container {
     background-color: #003da5 !important;
 }
 
-header.top-bar.header .header-container {
-    background-color: #003da5 !important;
+/* set hero image */
+.top-bar-background-image {
+    background-image: url("../images/library_background.jpeg") !important;
+}
+
+/* add dimming overlay over hero image for text readability */
+.background-overlay {
+    background: #00000080 !important;
+}
+
+/* make hero text bold and add spacing between letters to make it readable */
+.container[_ngcontent-ng-c1785864351] .custom-search-bar-container[_ngcontent-ng-c1785864351] h1[_ngcontent-ng-c1785864351] {
+    font-weight: 900 !important;
+    letter-spacing: 0.1rem !important;
 }
 
 /* make search bar same color as header unless hero image is present */
@@ -119,20 +134,24 @@ nde-top-bar {
     box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
 
+/* add semi-translucent (dark) background to search bar when hero image is present */
 body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
     background: #000000A0 !important;
 }
 
+/* remove background from search bar when hero image isn't present */
 body:has(.top-bar-background-image) nde-top-bar {
     background: none !important;
     box-shadow: none;
 }
 
+/* make text in top menu and dropdown mixed case */
 .mat-mdc-button,
 .mat-mdc-menu-item-text .text-uppercase.mat-title-small.display-block {
     text-transform: capitalize !important;
 }
 
+/* make text in user area rethink sans */
 .custom-lang-dropdown,
 nde-user-area {
     font-family: var(--sys-label-medium-font) !important;
@@ -168,7 +187,7 @@ nde-user-area {
 }
 
 
-
+/* set header font to white */
 header.top-bar.header,
 header.top-bar.header a,
 header.top-bar.header span,
@@ -181,34 +200,23 @@ header.top-bar.header.mdc-button_label {
     fill: #fff;
 }
 
-.top-bar-background-image {
-    background-image: url("../images/library_background.jpeg") !important;
-}
-
-.background-overlay {
-    background: #00000080 !important;
-}
-
-
-header.top-bar.header .header-container {
-    align-items: center !important;
-}
-
-header.top-bar.header .header-container nde-main-menu,
-header.top-bar.header .header-container>div {
-    min-width: 0;
-}
-
-.container[_ngcontent-ng-c1785864351] .custom-search-bar-container[_ngcontent-ng-c1785864351] h1[_ngcontent-ng-c1785864351] {
-    font-weight: 900 !important;
-    letter-spacing: 0.1rem !important;
-}
-
+/* define behavior of elements in header */
 header.top-bar.header {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;
     min-height: 100px;
+}
+
+/* keep menu items centered in the row */
+header.top-bar.header .header-container {
+    align-items: center !important;
+}
+
+/* prevent overlap between top menu and user area */
+header.top-bar.header .header-container nde-main-menu,
+header.top-bar.header .header-container>div {
+    min-width: 0;
 }
 
 /* add some margin to the logo */
