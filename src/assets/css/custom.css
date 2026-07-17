@@ -204,10 +204,6 @@ header.top-bar.header .header-container>div {
     letter-spacing: 0.1rem !important;
 }
 
-header.top-bar.header .header-container>nde-user-panel {
-    min-width: 200px;
-}
-
 header.top-bar.header {
     display: flex !important;
     flex-direction: column !important;
@@ -215,32 +211,38 @@ header.top-bar.header {
     min-height: 100px;
 }
 
+/* add some margin to the logo */
 header.top-bar.header .header-container nde-logo {
     margin-right: 4%;
 }
 
+/* make the logo size consistent with the main library page */
 header.top-bar.header .header-container nde-logo>a>img {
     height: 46px !important;
 }
 
+/* bring the menu up to line up with the library name and put a little space between them */
 header.top-bar.header .main-menu-container {
     padding-bottom: 9px;
     margin-left: 10px;
 }
 
-
+/* bring the language and user login up to line up with the library name */
 header.top-bar.header nde-user-panel {
     padding-bottom: 9px;
 }
 
+/* reduce(?) the padding in the top menu to allow more to fit in the banner */
 header.top-bar.header .main-menu-container .mat-mdc-button {
     padding: 0 2px !important;
 }
 
+/* make the divider between menu items in the header banner white */
 header.top-bar.header .main-menu-container mat-divider.nde-divider.mat-divider-vertical {
     border-right-color: #fff !important;
 }
 
+/* make the icons in the header banner white */
 header.top-bar.header .mat-icon.grey-icon-color-no-stroke svg g path,
 header.top-bar.header .mat-icon.grey-icon-color svg path {
     fill: #fff !important;
@@ -294,9 +296,11 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
 
+    /*
     .header-container,
+    */
     .header-container>div {
-        width: clamp(800px, 95%, 1200px) !important;
+        width: clamp(980px, 95%, 1300px) !important;
     }
 
     .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
@@ -320,9 +324,11 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
 
 @media (min-width: 960px) and (max-width:1279.98px) {
 
+    /*
     .header-container,
+    */
     .header-container>div {
-        width: clamp(700px, 95%, 800px) !important;
+        width: clamp(800px, 95%, 900px) !important;
     }
 
     .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
