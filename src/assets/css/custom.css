@@ -1,3 +1,5 @@
+@import url('newsreader_font.css');
+
 /* Body Styles have to add google fonts*/
 body {
     font-family: "Rethink Sans", sans-serif;
@@ -10,16 +12,18 @@ body {
 :root {
     --mdc-text-button-label-text-font: "Rethink Sans", sans-serif;
     --mat-sys-label-large-font: "Rethink Sans", sans-serif;
+    /*
     --sys-primary: #003da5;
     --sys-background: #e5ecf6;
     --sys-inverse-on-surface: #e5ecf6;
     --sys-primary-container: #e5ecf6;
-  --sys-body-large: 400 1rem / 1.5rem "Rethink Sans", sans-serif;
-  --sys-body-large-font: "Rethink Sans", sans-serif;
-  --sys-body-medium: 400 .875rem / 1.25rem "Rethink Sans", sans-serif;
-  --sys-body-medium-font: "Rethink Sans", sans-serif;
-  --sys-body-small: 400 .75rem / 1rem "Rethink Sans", sans-serif;
-  --sys-body-small-font: "Rethink Sans", sans-serif;
+    */
+  --sys-body-large: 400 1rem / 1.5rem "Newsreader", sans-serif;
+  --sys-body-large-font: "Newsreader", sans-serif;
+  --sys-body-medium: 400 .875rem / 1.25rem "Newsreader", sans-serif;
+  --sys-body-medium-font: "Newsreader", sans-serif;
+  --sys-body-small: 400 .75rem / 1rem "Newsreader", sans-serif;
+  --sys-body-small-font: "Newsreader", sans-serif;
   --sys-display-large: 400 3.562rem / 4rem "Rethink Sans", sans-serif;
   --sys-display-large-font: "Rethink Sans", sans-serif;
   --sys-display-medium: 400 2.812rem / 3.25rem "Rethink Sans", sans-serif;
@@ -44,6 +48,59 @@ body {
   --sys-title-medium-font: "Rethink Sans", sans-serif;
   --sys-title-small: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
   --sys-title-small-font: "Rethink Sans", sans-serif;
+--sys-scrim:#000000;
+--sys-shadow:#000000;
+--sys-primary:#003da5;
+--sys-on-primary-container:#00205b;
+--sys-on-primary-fixed:#00205b;
+--sys-on-secondary-container:#00205b;
+--sys-on-secondary-fixed:#00205b;
+--sys-neutral10:#1c1c1c;
+--sys-on-background:#1c1c1c;
+--sys-on-surface:#1c1c1c;
+--valid:#1E8000;
+--validDark:#225503;
+--sys-inverse-surface:#666666;
+--sys-neutral-variant20:#666666;
+--sys-on-tertiary-container:#003da5;
+--sys-on-tertiary-fixed:#003da5;
+--sys-on-error-container:#410002;
+--sys-on-primary-fixed-variant:#003da5;
+--sys-on-secondary-fixed-variant:#003da5;
+--sys-on-surface-variant:#666666;
+--sys-surface-tint:#00205b;
+--sys-secondary:#6da4d8;
+--sys-outline:#666666;
+--sys-on-tertiary-fixed-variant:#003da5;
+--sys-tertiary:#003da5;
+--sys-inverse-primary:#003da5;
+--sys-primary-fixed-dim:#003da5;
+--sys-secondary-fixed-dim:#003da5;
+--sys-outline-variant:#003da5;
+--validBG:#D1F4DA;
+--sys-surface-dim:#e5ecf6;
+--sys-primary-container:#e5ecf6;
+--sys-primary-fixed:#e5ecf6;
+--sys-secondary-container:#e5ecf6;
+--sys-secondary-fixed:#e5ecf6;
+--sys-surface-container-highest:#e5ecf6;
+--sys-surface-variant:#e5ecf6;
+--sys-surface-container-high:#e5ecf6;
+--sys-surface-container:#e5ecf6;
+--sys-inverse-on-surface:#e5ecf6;
+--sys-surface-container-low:#e5ecf6;
+--sys-surface:#e5ecf6;
+--sys-surface-bright:#e5ecf6;
+--sys-tertiary-fixed-dim:#e5ecf6;
+--sys-tertiary-container:#e5ecf6;
+--sys-tertiary-fixed:#e5ecf6;
+--whiteBG:#ffffff;
+--whiteText:#ffffff;
+--sys-on-error:#ffffff;
+--sys-on-primary:#ffffff;
+--sys-on-secondary:#ffffff;
+--sys-on-tertiary:#ffffff;
+--sys-surface-container-lowest:#ffffff;  
 }
 
 /* Header Styles */
