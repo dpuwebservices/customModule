@@ -130,6 +130,10 @@ body:has(.top-bar-background-image) nde-top-bar {
     text-transform: capitalize !important;
 }
 
+.custom-lang-dropdown, nde-user-area {
+    font-family: var(--sys-label-medium-font) !important;
+}
+
 /* lock resource-type filters */
 /*
 .resource-type-filters-container {
