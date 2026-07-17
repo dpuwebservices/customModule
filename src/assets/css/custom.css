@@ -6,6 +6,7 @@ body {
     font-style: normal;
 }
 
+
 :root {
     --mdc-text-button-label-text-font: "Rethink Sans", sans-serif;
     --mat-sys-label-large-font: "Rethink Sans", sans-serif;
@@ -13,6 +14,36 @@ body {
     --sys-background: #e5ecf6;
     --sys-inverse-on-surface: #e5ecf6;
     --sys-primary-container: #e5ecf6;
+  --sys-body-large: 400 1rem / 1.5rem "Rethink Sans", sans-serif;
+  --sys-body-large-font: "Rethink Sans", sans-serif;
+  --sys-body-medium: 400 .875rem / 1.25rem "Rethink Sans", sans-serif;
+  --sys-body-medium-font: "Rethink Sans", sans-serif;
+  --sys-body-small: 400 .75rem / 1rem "Rethink Sans", sans-serif;
+  --sys-body-small-font: "Rethink Sans", sans-serif;
+  --sys-display-large: 400 3.562rem / 4rem "Rethink Sans", sans-serif;
+  --sys-display-large-font: "Rethink Sans", sans-serif;
+  --sys-display-medium: 400 2.812rem / 3.25rem "Rethink Sans", sans-serif;
+  --sys-display-medium-font: "Rethink Sans", sans-serif;
+  --sys-display-small: 400 2.25rem / 2.75rem "Rethink Sans", sans-serif;
+  --sys-display-small-font: "Rethink Sans", sans-serif;
+  --sys-headline-large: 400 2rem / 2.5rem "Rethink Sans", sans-serif;
+  --sys-headline-large-font: "Rethink Sans", sans-serif;
+  --sys-headline-medium: 400 1.75rem / 2.25rem "Rethink Sans", sans-serif;
+  --sys-headline-medium-font: "Rethink Sans", sans-serif;
+  --sys-headline-small: 400 1.5rem / 2rem "Rethink Sans", sans-serif;
+  --sys-headline-small-font: "Rethink Sans", sans-serif;
+  --sys-label-large: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
+  --sys-label-large-font: "Rethink Sans", sans-serif;
+  --sys-label-medium: 500 .75rem / 1rem "Rethink Sans", sans-serif;
+  --sys-label-medium-font: "Rethink Sans", sans-serif;
+  --sys-label-small: 500 .688rem / 1rem "Rethink Sans", sans-serif;
+  --sys-label-small-font: "Rethink Sans", sans-serif;
+  --sys-title-large: 400 1.375rem / 1.75rem "Rethink Sans", sans-serif;
+  --sys-title-large-font: "Rethink Sans", sans-serif;
+  --sys-title-medium: 500 1rem / 1.5rem "Rethink Sans", sans-serif;
+  --sys-title-medium-font: "Rethink Sans", sans-serif;
+  --sys-title-small: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
+  --sys-title-small-font: "Rethink Sans", sans-serif;
 }
 
 /* Header Styles */
