@@ -37,6 +37,10 @@ body:has(.top-bar-background-image) nde-top-bar {
     box-shadow: none ;
 }
 
+.mat-mdc-button {
+    text-transform: capitalize !important;
+}
+
 /* lock resource-type filters */
 /*
 .resource-type-filters-container {

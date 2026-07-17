@@ -256,5 +256,15 @@
   }
 
 }
-
-
+:root {
+  --sys-primary: #003da5;
+  --sys-background: #e5ecf6;
+  --sys-secondary: #6da4d8;
+  --sys-surface: #f1f1f1;
+}
+.icon_background {
+  fill: var(--sys-surface);
+}
+.icon_body {
+  fill: var(--sys-primary);
+}
