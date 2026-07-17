@@ -256,14 +256,21 @@
   }
 
 }
-/*
+
 :root {
   --sys-primary: #003da5;
   --sys-background: #e5ecf6;
   --sys-secondary: #6da4d8;
   --sys-surface: #f1f1f1;
+  --sys-body-large: 400 1rem / 1.5rem "Newsreader", serif;
+  --sys-body-large-font: "Newsreader", serif;
+  --sys-body-medium: 400 .875rem / 1.25rem "Newsreader", serif;
+  --sys-body-medium-font: "Newsreader", serif;
+  --sys-body-small: 400 .75rem / 1rem "Newsreader", serif;
+  --sys-body-small-font: "Newsreader", serif;
+
 }
-*/
+
 .icon_background {
   fill: var(--sys-surface);
 }
@@ -271,6 +278,6 @@
   fill: var(--sys-primary);
 }
 
-.help-sign-in-container li {
-  font-family: var(--sys-label-medium-font);
+.help-sign-in-container li, .search-box-container input, .mat-mdc-input-element.mat-mdc-autocomplete-trigger.search-input-field.cdk-text-field-autofill-monitored {
+  font-family: var(--sys-label-medium-font) !important;
 }

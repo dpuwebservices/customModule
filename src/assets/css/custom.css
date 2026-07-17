@@ -19,12 +19,12 @@ body {
     --sys-inverse-on-surface: #e5ecf6;
     --sys-primary-container: #e5ecf6;
     */
-  --sys-body-large: 400 1rem / 1.5rem "Newsreader", serif;
-  --sys-body-large-font: "Newsreader", serif;
-  --sys-body-medium: 400 .875rem / 1.25rem "Newsreader", serif;
-  --sys-body-medium-font: "Newsreader", serif;
-  --sys-body-small: 400 .75rem / 1rem "Newsreader", serif;
-  --sys-body-small-font: "Newsreader", serif;
+  --sys-body-large: 400 1rem / 1.5rem "Rethink Sans", sans-serif;
+  --sys-body-large-font: "Rethink Sans", sans-serif;
+  --sys-body-medium: 400 .875rem / 1.25rem "Rethink Sans", sans-serif;
+  --sys-body-medium-font: "Rethink Sans", sans-serif;
+  --sys-body-small: 400 .75rem / 1rem "Rethink Sans", sans-serif;
+  --sys-body-small-font: "Rethink Sans", sans-serif;
   --sys-display-large: 400 3.562rem / 4rem "Rethink Sans", sans-serif;
   --sys-display-large-font: "Rethink Sans", sans-serif;
   --sys-display-medium: 400 2.812rem / 3.25rem "Rethink Sans", sans-serif;
