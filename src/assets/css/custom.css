@@ -157,6 +157,11 @@ nde-user-area {
     font-family: var(--sys-label-medium-font) !important;
 }
 
+/* fix size of initials after user logs in */
+.user-area[_ngcontent-ng-c2730361004] .user-area-logged-in[_ngcontent-ng-c2730361004] span[_ngcontent-ng-c2730361004] {
+    font-size: .875rem;
+}
+
 /* lock resource-type filters */
 /*
 .resource-type-filters-container {
