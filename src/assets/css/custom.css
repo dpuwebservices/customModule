@@ -100,8 +100,8 @@ body {
     --sys-surface-container: #e5ecf6;
     --sys-inverse-on-surface: #e5ecf6;
     --sys-surface-container-low: #e5ecf6;
-    --sys-surface: #e5ecf6;
-    --sys-surface-bright: #e5ecf6;
+    --sys-surface: #f1f1f1;
+    --sys-surface-bright: #f1f1f1;
     --sys-tertiary-fixed-dim: #e5ecf6;
     --sys-tertiary-container: #e5ecf6;
     --sys-tertiary-fixed: #e5ecf6;
