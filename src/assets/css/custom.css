@@ -19,89 +19,89 @@ body {
     --sys-inverse-on-surface: #e5ecf6;
     --sys-primary-container: #e5ecf6;
     */
-  --sys-body-large: 400 1rem / 1.5rem "Rethink Sans", sans-serif;
-  --sys-body-large-font: "Rethink Sans", sans-serif;
-  --sys-body-medium: 400 .875rem / 1.25rem "Rethink Sans", sans-serif;
-  --sys-body-medium-font: "Rethink Sans", sans-serif;
-  --sys-body-small: 400 .75rem / 1rem "Rethink Sans", sans-serif;
-  --sys-body-small-font: "Rethink Sans", sans-serif;
-  --sys-display-large: 400 3.562rem / 4rem "Rethink Sans", sans-serif;
-  --sys-display-large-font: "Rethink Sans", sans-serif;
-  --sys-display-medium: 400 2.812rem / 3.25rem "Rethink Sans", sans-serif;
-  --sys-display-medium-font: "Rethink Sans", sans-serif;
-  --sys-display-small: 400 2.25rem / 2.75rem "Rethink Sans", sans-serif;
-  --sys-display-small-font: "Rethink Sans", sans-serif;
-  --sys-headline-large: 400 2rem / 2.5rem "Rethink Sans", sans-serif;
-  --sys-headline-large-font: "Rethink Sans", sans-serif;
-  --sys-headline-medium: 400 1.75rem / 2.25rem "Rethink Sans", sans-serif;
-  --sys-headline-medium-font: "Rethink Sans", sans-serif;
-  --sys-headline-small: 400 1.5rem / 2rem "Rethink Sans", sans-serif;
-  --sys-headline-small-font: "Rethink Sans", sans-serif;
-  --sys-label-large: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
-  --sys-label-large-font: "Rethink Sans", sans-serif;
-  --sys-label-medium: 500 .75rem / 1rem "Rethink Sans", sans-serif;
-  --sys-label-medium-font: "Rethink Sans", sans-serif;
-  --sys-label-small: 500 .688rem / 1rem "Rethink Sans", sans-serif;
-  --sys-label-small-font: "Rethink Sans", sans-serif;
-  --sys-title-large: 400 1.375rem / 1.75rem "Rethink Sans", sans-serif;
-  --sys-title-large-font: "Rethink Sans", sans-serif;
-  --sys-title-medium: 500 1rem / 1.5rem "Rethink Sans", sans-serif;
-  --sys-title-medium-font: "Rethink Sans", sans-serif;
-  --sys-title-small: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
-  --sys-title-small-font: "Rethink Sans", sans-serif;
---sys-scrim:#000000;
---sys-shadow:#000000;
---sys-primary:#003da5;
---sys-on-primary-container:#00205b;
---sys-on-primary-fixed:#00205b;
---sys-on-secondary-container:#00205b;
---sys-on-secondary-fixed:#00205b;
---sys-neutral10:#1c1c1c;
---sys-on-background:#1c1c1c;
---sys-on-surface:#1c1c1c;
---valid:#1E8000;
---validDark:#225503;
---sys-inverse-surface:#666666;
---sys-neutral-variant20:#666666;
---sys-on-tertiary-container:#003da5;
---sys-on-tertiary-fixed:#003da5;
---sys-on-error-container:#410002;
---sys-on-primary-fixed-variant:#003da5;
---sys-on-secondary-fixed-variant:#003da5;
---sys-on-surface-variant:#666666;
---sys-surface-tint:#00205b;
---sys-secondary:#6da4d8;
---sys-outline:#666666;
---sys-on-tertiary-fixed-variant:#003da5;
---sys-tertiary:#003da5;
---sys-inverse-primary:#003da5;
---sys-primary-fixed-dim:#003da5;
---sys-secondary-fixed-dim:#003da5;
---sys-outline-variant:#003da5;
---validBG:#D1F4DA;
---sys-surface-dim:#e5ecf6;
---sys-primary-container:#e5ecf6;
---sys-primary-fixed:#e5ecf6;
---sys-secondary-container:#e5ecf6;
---sys-secondary-fixed:#e5ecf6;
---sys-surface-container-highest:#e5ecf6;
---sys-surface-variant:#e5ecf6;
---sys-surface-container-high:#e5ecf6;
---sys-surface-container:#e5ecf6;
---sys-inverse-on-surface:#e5ecf6;
---sys-surface-container-low:#e5ecf6;
---sys-surface:#e5ecf6;
---sys-surface-bright:#e5ecf6;
---sys-tertiary-fixed-dim:#e5ecf6;
---sys-tertiary-container:#e5ecf6;
---sys-tertiary-fixed:#e5ecf6;
---whiteBG:#ffffff;
---whiteText:#ffffff;
---sys-on-error:#ffffff;
---sys-on-primary:#ffffff;
---sys-on-secondary:#ffffff;
---sys-on-tertiary:#ffffff;
---sys-surface-container-lowest:#ffffff;  
+    --sys-body-large: 400 1rem / 1.5rem "Rethink Sans", sans-serif;
+    --sys-body-large-font: "Rethink Sans", sans-serif;
+    --sys-body-medium: 400 .875rem / 1.25rem "Rethink Sans", sans-serif;
+    --sys-body-medium-font: "Rethink Sans", sans-serif;
+    --sys-body-small: 400 .75rem / 1rem "Rethink Sans", sans-serif;
+    --sys-body-small-font: "Rethink Sans", sans-serif;
+    --sys-display-large: 400 3.562rem / 4rem "Rethink Sans", sans-serif;
+    --sys-display-large-font: "Rethink Sans", sans-serif;
+    --sys-display-medium: 400 2.812rem / 3.25rem "Rethink Sans", sans-serif;
+    --sys-display-medium-font: "Rethink Sans", sans-serif;
+    --sys-display-small: 400 2.25rem / 2.75rem "Rethink Sans", sans-serif;
+    --sys-display-small-font: "Rethink Sans", sans-serif;
+    --sys-headline-large: 400 2rem / 2.5rem "Rethink Sans", sans-serif;
+    --sys-headline-large-font: "Rethink Sans", sans-serif;
+    --sys-headline-medium: 400 1.75rem / 2.25rem "Rethink Sans", sans-serif;
+    --sys-headline-medium-font: "Rethink Sans", sans-serif;
+    --sys-headline-small: 400 1.5rem / 2rem "Rethink Sans", sans-serif;
+    --sys-headline-small-font: "Rethink Sans", sans-serif;
+    --sys-label-large: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
+    --sys-label-large-font: "Rethink Sans", sans-serif;
+    --sys-label-medium: 500 .75rem / 1rem "Rethink Sans", sans-serif;
+    --sys-label-medium-font: "Rethink Sans", sans-serif;
+    --sys-label-small: 500 .688rem / 1rem "Rethink Sans", sans-serif;
+    --sys-label-small-font: "Rethink Sans", sans-serif;
+    --sys-title-large: 400 1.375rem / 1.75rem "Rethink Sans", sans-serif;
+    --sys-title-large-font: "Rethink Sans", sans-serif;
+    --sys-title-medium: 500 1rem / 1.5rem "Rethink Sans", sans-serif;
+    --sys-title-medium-font: "Rethink Sans", sans-serif;
+    --sys-title-small: 500 .875rem / 1.25rem "Rethink Sans", sans-serif;
+    --sys-title-small-font: "Rethink Sans", sans-serif;
+    --sys-scrim: #000000;
+    --sys-shadow: #000000;
+    --sys-primary: #003da5;
+    --sys-on-primary-container: #00205b;
+    --sys-on-primary-fixed: #00205b;
+    --sys-on-secondary-container: #00205b;
+    --sys-on-secondary-fixed: #00205b;
+    --sys-neutral10: #1c1c1c;
+    --sys-on-background: #1c1c1c;
+    --sys-on-surface: #1c1c1c;
+    --valid: #1E8000;
+    --validDark: #225503;
+    --sys-inverse-surface: #666666;
+    --sys-neutral-variant20: #666666;
+    --sys-on-tertiary-container: #003da5;
+    --sys-on-tertiary-fixed: #003da5;
+    --sys-on-error-container: #410002;
+    --sys-on-primary-fixed-variant: #003da5;
+    --sys-on-secondary-fixed-variant: #003da5;
+    --sys-on-surface-variant: #666666;
+    --sys-surface-tint: #00205b;
+    --sys-secondary: #6da4d8;
+    --sys-outline: #666666;
+    --sys-on-tertiary-fixed-variant: #003da5;
+    --sys-tertiary: #003da5;
+    --sys-inverse-primary: #003da5;
+    --sys-primary-fixed-dim: #003da5;
+    --sys-secondary-fixed-dim: #003da5;
+    --sys-outline-variant: #003da5;
+    --validBG: #D1F4DA;
+    --sys-surface-dim: #e5ecf6;
+    --sys-primary-container: #e5ecf6;
+    --sys-primary-fixed: #e5ecf6;
+    --sys-secondary-container: #e5ecf6;
+    --sys-secondary-fixed: #e5ecf6;
+    --sys-surface-container-highest: #e5ecf6;
+    --sys-surface-variant: #e5ecf6;
+    --sys-surface-container-high: #e5ecf6;
+    --sys-surface-container: #e5ecf6;
+    --sys-inverse-on-surface: #e5ecf6;
+    --sys-surface-container-low: #e5ecf6;
+    --sys-surface: #e5ecf6;
+    --sys-surface-bright: #e5ecf6;
+    --sys-tertiary-fixed-dim: #e5ecf6;
+    --sys-tertiary-container: #e5ecf6;
+    --sys-tertiary-fixed: #e5ecf6;
+    --whiteBG: #ffffff;
+    --whiteText: #ffffff;
+    --sys-on-error: #ffffff;
+    --sys-on-primary: #ffffff;
+    --sys-on-secondary: #ffffff;
+    --sys-on-tertiary: #ffffff;
+    --sys-surface-container-lowest: #ffffff;
 }
 
 /* Header Styles */
@@ -118,19 +118,23 @@ nde-top-bar {
     background-color: #003da5 !important;
     box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
+
 body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
     background: #000000A0 !important;
 }
+
 body:has(.top-bar-background-image) nde-top-bar {
-    background: none!important;
-    box-shadow: none ;
+    background: none !important;
+    box-shadow: none;
 }
 
-.mat-mdc-button {
+.mat-mdc-button,
+.mat-mdc-menu-item-text .text-uppercase.mat-title-small.display-block {
     text-transform: capitalize !important;
 }
 
-.custom-lang-dropdown, nde-user-area {
+.custom-lang-dropdown,
+nde-user-area {
     font-family: var(--sys-label-medium-font) !important;
 }
 
@@ -158,8 +162,9 @@ body:has(.top-bar-background-image) nde-top-bar {
 }
 */
 
-.mat-elevation-z3, .mat-mdc-elevation-specific.mat-elevation-z3 {
-  box-shadow: none !important;
+.mat-elevation-z3,
+.mat-mdc-elevation-specific.mat-elevation-z3 {
+    box-shadow: none !important;
 }
 
 
@@ -193,9 +198,10 @@ header.top-bar.header .header-container nde-main-menu,
 header.top-bar.header .header-container>div {
     min-width: 0;
 }
+
 .container[_ngcontent-ng-c1785864351] .custom-search-bar-container[_ngcontent-ng-c1785864351] h1[_ngcontent-ng-c1785864351] {
-    font-weight:900 !important;
-    letter-spacing:0.1rem !important;
+    font-weight: 900 !important;
+    letter-spacing: 0.1rem !important;
 }
 
 header.top-bar.header .header-container>nde-user-panel {
@@ -250,35 +256,35 @@ header.top-bar.header .mat-icon.grey-icon-color svg path {
 }
 
 /* Resource type font color   */
-.resource-type-filters-container
-	button.resource-type-items
-    .mdc-button__label {
-      font-weight: bold !important;
-      color: #1c1c1c !important;   
+.resource-type-filters-container button.resource-type-items .mdc-button__label {
+    font-weight: bold !important;
+    color: #1c1c1c !important;
 }
 
 /* Line under resource bar */
-.resource-type-bar>div.flex-row{
+.resource-type-bar>div.flex-row {
     border-bottom: 0.5px solid #1c1c1c !important;
 }
 
 /* float chat widget */
 body:has(nde-back-to-top>button:not(.back-to-top-hide)) #s-lch-widget-12569 {
-  bottom:50px!important
+    bottom: 50px !important
 }
+
 body:has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-12569 {
-  bottom:110px!important
+    bottom: 110px !important
 }
+
 body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons.bumped-above-snackbar) #s-lch-widget-12569 {
-  bottom:150px!important
+    bottom: 150px !important
 }
 
 /* reverse order of initials in the user menu */
 .user-area .user-area-logged-in span {
-unicode-bidi: bidi-override;
-direction: rtl;
-display: inline-block !important;
-line-height: 24px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    display: inline-block !important;
+    line-height: 24px;
 }
 
 .mdc-button.mat-mdc-button.cdk-focused.cdk-keyboard-focused {
@@ -292,8 +298,9 @@ line-height: 24px;
     .header-container>div {
         width: clamp(800px, 95%, 1200px) !important;
     }
+
     .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
-        width: clamp(1088px,85%,1368px);
+        width: clamp(1088px, 85%, 1368px);
     }
 
     /* float chat widget */
@@ -317,8 +324,9 @@ line-height: 24px;
     .header-container>div {
         width: clamp(700px, 95%, 800px) !important;
     }
+
     .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
-        width: clamp(912px,85%,1088px);
+        width: clamp(912px, 85%, 1088px);
     }
 
     /* float chat widget */
@@ -335,10 +343,11 @@ line-height: 24px;
         */
 
 }
+
 @media (min-width: 600px) and (max-width: 959.98px) {
 
     .search-result-content[_ngcontent-ng-c4253737009] .resource-type-filters-container[_ngcontent-ng-c4253737009] .resource-type-filter-wrapper[_ngcontent-ng-c4253737009] {
-        width: clamp(288px,88.42544317%,848px);
+        width: clamp(288px, 88.42544317%, 848px);
     }
 
     /* float chat widget */
@@ -356,8 +365,9 @@ line-height: 24px;
 
 
 }
+
 @media (max-width: 599.98px) {
-/*
+    /*
     .resource-type-filters-container {
         position:static;
         z-index: 1;
