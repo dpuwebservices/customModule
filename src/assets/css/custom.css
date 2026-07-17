@@ -1,4 +1,5 @@
 @import url('newsreader_font.css');
+@import url('rethink_font.css');
 
 /* Body Styles have to add google fonts*/
 body {
@@ -18,12 +19,12 @@ body {
     --sys-inverse-on-surface: #e5ecf6;
     --sys-primary-container: #e5ecf6;
     */
-  --sys-body-large: 400 1rem / 1.5rem "Newsreader", sans-serif;
-  --sys-body-large-font: "Newsreader", sans-serif;
-  --sys-body-medium: 400 .875rem / 1.25rem "Newsreader", sans-serif;
-  --sys-body-medium-font: "Newsreader", sans-serif;
-  --sys-body-small: 400 .75rem / 1rem "Newsreader", sans-serif;
-  --sys-body-small-font: "Newsreader", sans-serif;
+  --sys-body-large: 400 1rem / 1.5rem "Newsreader", serif;
+  --sys-body-large-font: "Newsreader", serif;
+  --sys-body-medium: 400 .875rem / 1.25rem "Newsreader", serif;
+  --sys-body-medium-font: "Newsreader", serif;
+  --sys-body-small: 400 .75rem / 1rem "Newsreader", serif;
+  --sys-body-small-font: "Newsreader", serif;
   --sys-display-large: 400 3.562rem / 4rem "Rethink Sans", sans-serif;
   --sys-display-large-font: "Rethink Sans", sans-serif;
   --sys-display-medium: 400 2.812rem / 3.25rem "Rethink Sans", sans-serif;
@@ -188,7 +189,10 @@ header.top-bar.header .header-container nde-main-menu,
 header.top-bar.header .header-container>div {
     min-width: 0;
 }
-
+.container[_ngcontent-ng-c1785864351] .custom-search-bar-container[_ngcontent-ng-c1785864351] h1[_ngcontent-ng-c1785864351] {
+    font-weight:900 !important;
+    letter-spacing:0.1rem !important;
+}
 
 header.top-bar.header .header-container>nde-user-panel {
     min-width: 200px;
