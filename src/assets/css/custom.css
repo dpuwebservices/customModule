@@ -9,6 +9,16 @@ body {
     font-style: normal;
 }
 
+.mat-body-large,
+.mat-typography .mat-body-large,
+.mat-body-medium,
+.mat-typography .mat-body-medium,
+.mat-body-small,
+.mat-body-typography .mat-body-small,
+.mat-typography {
+    letter-spacing: normal;
+}
+
 
 :root {
     --mdc-text-button-label-text-font: "Rethink Sans", sans-serif;
