@@ -261,6 +261,15 @@ header.top-bar.header .mat-icon.grey-icon-color svg path {
     fill: #fff !important;
 }
 
+/* make the text on the search bar white on results pages */
+.search-bar-container .advanced-search-button mat-icon svg path {
+    fill: #fff !important;
+}
+
+.search-bar-container .advanced-search-button .mdc-button__label {
+    color: #fff !important;
+}
+
 /* trying to update logo */
 [data-label="nde.landing.header"] {
     text-indent: -9999px;
