@@ -190,6 +190,7 @@
         padding: 2rem;
         background-color: var(--sys-inverse-on-surface);
         gap: 1.5rem;
+        border-radius: .625rem 0 0 .625rem;
 
         @include mixing.respond-to('small', 'xsmall') {
           padding: 1rem;
@@ -210,7 +211,7 @@
         }
 
         .about-text-description {
-          line-height: 2rem;
+          line-height: 1.5rem;
           font-size: vars.$largeFontSize;
           font-weight: vars.$normal;
 
@@ -228,18 +229,24 @@
 
             ul {
               li {
-                margin-block: .625rem;
+                margin-block: .4rem;
               }
             }
           }
 
           ul {
+            margin-bottom: 0.5rem;
             li {
-              margin-block: 1rem;
+              margin-block: 0.5rem;
               display: flex;
               align-items: center;
               gap: .5rem;
             }
+          }
+          p {
+            display:flex;
+            margin-top: 0.5rem;
+            flex-wrap: nowrap;
           }
         }
       }
@@ -275,4 +282,25 @@
 .search-box-container input,
 .mat-mdc-input-element.mat-mdc-autocomplete-trigger.search-input-field.cdk-text-field-autofill-monitored {
   font-family: var(--sys-label-medium-font) !important;
+}
+.sign-in {  
+  display: flex;          /* Allows inner elements to use flex alignment */
+  min-width: 0;           /* Prevents the flex item from expanding beyond its parent */
+  max-width: 100%;        /* Forces the container to stay within the boundaries */
+  width: fit-content;     /* Shrinks the div tightly around the button */
+}
+
+#myLibraryCard {
+  padding-block: .5rem;
+  padding-inline: 1rem;
+  border-radius: 2rem;
+  background-color: var(--sys-primary);
+  color: var(--whiteText);
+  font-weight: vars.$bold;
+  font-size: vars.$bigFontSize;
+  font-family: var(--sys-label-medium-font);
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
 }
