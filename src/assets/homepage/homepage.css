@@ -181,6 +181,12 @@
   }
 
   .about {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    height: auto;
+    min-height: 0;
+    
     .about-content {
       @include mixing.respond-to('small', 'xsmall') {
         flex-direction: column-reverse;
@@ -191,10 +197,18 @@
         background-color: var(--sys-inverse-on-surface);
         gap: 1.5rem;
         border-radius: .625rem 0 0 .625rem;
+        flex: 1 1 auto;
+        min-width: 0;
+        overflow: visible;
+        height: auto;
 
         @include mixing.respond-to('small', 'xsmall') {
           padding: 1rem;
           gap: 1rem;
+        }
+
+        @media (max-width: 959.98px) {
+          border-radius: .625rem;
         }
 
         .about-text-title {
@@ -252,6 +266,9 @@
       }
 
       .about-image {
+        @media (max-width: 959.98px) {
+          order: -1;
+        }
         img {
           width: auto;
           height: 100%;
@@ -260,6 +277,10 @@
 
           @include mixing.respond-to('small', 'xsmall') {
             border-radius: .625rem .625rem 0 0;
+            width: 100%;
+          }
+          @media (max-width: 959.98px) {
+            border-radius: .625rem;
             width: 100%;
           }
         }
@@ -291,6 +312,12 @@
 }
 
 #myLibraryCard {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  max-width: 100%;
+  box-sizing: border-box;
+
   padding-block: .5rem;
   padding-inline: 1rem;
   border-radius: 2rem;
