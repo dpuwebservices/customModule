@@ -330,3 +330,7 @@
   transition: background-color 0.3s ease;
   text-decoration: none;
 }
+#myLibraryCard:hover {
+  background-color: var(--sys-surface-tint);
+  text-decoration: underline;
+}
