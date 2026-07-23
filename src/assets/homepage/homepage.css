@@ -24,12 +24,12 @@
       grid-column-gap: 1rem;
 
       li {
-
         a {
-          background-color: var(--sys-inverse-on-surface);
+          background-color: var(--sys-primary); /* make background color primary */
           display: flex;
           padding: 1rem;
-          border: .0625rem solid var(--sys-primary);
+          border: .0625rem solid var(--sys-surface-tint); /* make border darker */
+          color: #fff; /* make text white */
           border-radius: .5rem;
           align-items: center;
           flex-direction: column;
@@ -38,15 +38,20 @@
           cursor: pointer;
           height: 100%;
 
+          &:hover, &:focus {
+            box-shadow: none !important;
+            transition: none !important;
+            transform: none !important;
+            background-color: var(--sys-surface-tint);
+          }
           @include mixing.respond-to('large', 'xlarge') {
 
             &:hover,
             &:focus {
-              transition: box-shadow .3s, transform .3s ease-in-out;
-              box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1);
-              transform: translateY(-1.1875rem);
+              box-shadow: none !important;
+              transition: none !important;
+              transform: none !important;
             }
-
           }
 
 
@@ -289,7 +294,6 @@
 
 }
 
-
 .icon_background {
   fill: var(--sys-surface);
 }
@@ -334,3 +338,4 @@
   background-color: var(--sys-surface-tint);
   text-decoration: underline;
 }
+@import url("main-buttons.css");

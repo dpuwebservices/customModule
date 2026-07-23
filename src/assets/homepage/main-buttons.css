@@ -1,0 +1,6 @@
+@media only screen and (((min-width: 1280px) and (max-width: 1919.98px)) or (min-width: 1920px)) {
+  .main-landing-page .menu-container .menu li a:hover, .main-landing-page .menu-container .menu li a:focus {
+    transition:none;
+    transform: none;
+  }
+}
