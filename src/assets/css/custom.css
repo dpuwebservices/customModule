@@ -144,9 +144,9 @@ nde-top-bar {
     box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
 
-/* add semi-translucent (dark) background to search bar when hero image is present */
+/* add navy background to search bar when hero image is present */
 body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
-    background: #000000A0 !important;
+    background: var(--sys-on-primary-container) !important;
 }
 
 /* remove background from search bar when hero image isn't present */
@@ -328,6 +328,16 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
 
 .mdc-button.mat-mdc-button.cdk-focused.cdk-keyboard-focused {
     outline-width: 0px !important;
+}
+
+/* remove open access button */
+#quick-filter-open_access {
+    display: none;
+}
+
+/* remove expand my results line */
+#expand-results-options-line {
+    display: none;
 }
 
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
