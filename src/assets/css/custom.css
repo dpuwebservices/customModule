@@ -272,7 +272,8 @@ header.top-bar.header .mat-icon.grey-icon-color svg path {
 }
 
 /* make the text on the search bar white on results pages */
-.search-bar-container .advanced-search-button mat-icon svg path {
+.search-bar-container .advanced-search-button mat-icon svg path,
+nde-main-menu mat-icon svg path {
     fill: #fff !important;
 }
 
