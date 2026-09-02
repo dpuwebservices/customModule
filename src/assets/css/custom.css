@@ -140,7 +140,8 @@ header.top-bar.header .header-container {
 
 /* make search bar same color as header unless hero image is present */
 nde-top-bar {
-    background-color: #003da5 !important;
+/*    background-color: #003da5 !important; */
+    background: var(--sys-on-primary-container) !important;
     box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
 
@@ -337,8 +338,8 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
 }
 
 /* remove expand my results line */
-#expand-results-options-line {
-    display: none;
+.expand-options-visible {
+    display: none !important;
 }
 
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */

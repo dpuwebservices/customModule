@@ -1,6 +1,6 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 #Environment specific files
-build-setting.env
+build-settings.env
 
 
 # Compiled output
