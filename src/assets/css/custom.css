@@ -155,6 +155,13 @@ body:has(.top-bar-background-image) nde-top-bar {
     box-shadow: none;
 }
 
+.custom-search-bar-container h1 {
+    font-weight: 900 !important;
+    letter-spacing: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+}
+
 /* make text in top menu and dropdown mixed case */
 .mat-mdc-button,
 .mat-mdc-menu-item-text .text-uppercase.mat-title-small.display-block {
