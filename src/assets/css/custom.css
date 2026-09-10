@@ -140,20 +140,27 @@ header.top-bar.header .header-container {
 
 /* make search bar same color as header unless hero image is present */
 nde-top-bar {
-/*    background-color: #003da5 !important; */
+    /*    background-color: #003da5 !important; */
     background: var(--sys-on-primary-container) !important;
     box-shadow: var(--mat-app-elevation-shadow-level-3, none);
 }
 
 /* add navy background to search bar when hero image is present */
 body:has(.top-bar-background-image) nde-top-bar:has(nde-search-bar-presenter>div) {
-    background: var(--sys-on-primary-container) !important;
+    background: rgb(from var(--sys-on-primary-container) r g b / 0.8) !important;
 }
 
 /* remove background from search bar when hero image isn't present */
 body:has(.top-bar-background-image) nde-top-bar {
     background: none !important;
     box-shadow: none;
+}
+
+.custom-search-bar-container h1 {
+    font-weight: 900 !important;
+    letter-spacing: normal;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* make text in top menu and dropdown mixed case */
