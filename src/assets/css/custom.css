@@ -221,7 +221,6 @@ header.top-bar.header {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;
-    min-height: 100px;
 }
 
 /* keep menu items centered in the row */
