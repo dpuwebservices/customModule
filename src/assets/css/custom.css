@@ -177,7 +177,7 @@ nde-user-area {
 
 /* fix size of initials after user logs in */
 .user-area[_ngcontent-ng-c2730361004] .user-area-logged-in[_ngcontent-ng-c2730361004] span[_ngcontent-ng-c2730361004] {
-    font-size: .875rem;
+    font-size: var(--mat-select-trigger-text-size, var(--mat-sys-body-large-size)) !important;
 }
 
 /* lock resource-type filters */
@@ -276,6 +276,16 @@ header.top-bar.header .main-menu-container mat-divider.nde-divider.mat-divider-v
 header.top-bar.header .mat-icon.grey-icon-color-no-stroke svg g path,
 header.top-bar.header .mat-icon.grey-icon-color svg path {
     fill: #fff !important;
+}
+
+/* make the area behind user login white */
+#user-area-button .mat-mdc-button-persistent-ripple {
+    background-color: #FFF !important;
+}
+
+/* make the user login icon blue */
+#user-area-button svg path {
+    fill: var(--sys-primary) !important;
 }
 
 /* make the text on the search bar white on results pages */
