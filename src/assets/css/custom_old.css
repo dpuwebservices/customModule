@@ -177,7 +177,7 @@ nde-user-area {
 
 /* fix size of initials after user logs in */
 .user-area[_ngcontent-ng-c2730361004] .user-area-logged-in[_ngcontent-ng-c2730361004] span[_ngcontent-ng-c2730361004] {
-    font-size: var(--mat-select-trigger-text-size, var(--mat-sys-body-large-size)) !important;
+    font-size: .875rem;
 }
 
 /* lock resource-type filters */
@@ -228,6 +228,7 @@ header.top-bar.header {
     display: flex !important;
     flex-direction: column !important;
     justify-content: center;
+    min-height: 100px;
 }
 
 /* keep menu items centered in the row */
