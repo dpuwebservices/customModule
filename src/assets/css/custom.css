@@ -224,6 +224,22 @@ header.top-bar.header.mdc-button_label,
     fill: #fff;
 }
 
+/* make the area behind user login white */
+#user-area-button .mat-mdc-button-persistent-ripple {
+    background-color: #FFF !important;
+}
+
+/* make the user login icon blue */
+#user-area-button svg path {
+    fill: var(--sys-primary) !important;
+}
+/* set user area button text to blue and appear on top of the user area button */
+#user-area-button .ng-star-inserted {
+	color: var(--sys-primary) !important;
+	z-index: 2;
+	background-color: transparent;
+}
+
 /* define behavior of elements in header */
 header.top-bar.header {
     display: flex !important;
