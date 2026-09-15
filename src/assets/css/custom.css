@@ -297,6 +297,12 @@ nde-main-menu mat-icon svg path {
     display: block;
 }
 
+/* Adjusting the spacing for announcement h2 */
+
+.announcements-item-title {
+    padding-top:1em;
+}
+
 /* Resource type font color   */
 .resource-type-filters-container button.resource-type-items .mdc-button__label {
     font-weight: bold !important;
