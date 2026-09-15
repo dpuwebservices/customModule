@@ -366,3 +366,39 @@
   text-decoration: underline;
 }
 @import url("main-buttons.css");
+
+/* make icons and text line up in welcome list */
+.welcome ul li {
+	display: flex;
+	gap: 0.5rem;
+	margin-block: 0.2rem;
+}
+
+/* tweak the text to lower it a little to line up with the icon */
+.welcome ul li span {
+    padding-top: 3px;
+}
+/* make feedback button like the account button */
+.announcements .icon_background a {
+	display: inline-flex;
+	align-items: center;
+	width: fit-content;
+	max-width: 100%;
+	box-sizing: border-box;
+	padding-block: .5rem;
+	padding-inline: 1rem;
+	border-radius: 2rem;
+	background-color: var(--sys-primary);
+	color: var(--whiteText);
+	font-weight: bold !important;
+	/* font-size: vars.$bigFontSize; */
+	font-family: var(--sys-label-medium-font);
+	border: none;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	text-decoration: none;
+}
+
+.welcome-title, .announcements-item-title {
+  font-weight: 500 !important;
+}

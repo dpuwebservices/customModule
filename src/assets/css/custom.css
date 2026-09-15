@@ -316,9 +316,11 @@ nde-main-menu mat-icon svg path {
 
 /* Adjusting the spacing for announcement h2 */
 
+/*
 .announcements-item-title {
     padding-top:1em;
 }
+*/
 
 /* Resource type font color   */
 .resource-type-filters-container button.resource-type-items .mdc-button__label {
@@ -370,6 +372,8 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
 .expand-options-visible {
     display: none !important;
 }
+
+
 
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
