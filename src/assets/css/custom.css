@@ -218,7 +218,8 @@ header.top-bar.header button,
 header.top-bar.header mat-icon,
 header.top-bar.header mat-divider.nde-divider.mat-divider-vertical,
 header.top-bar.header .mat-mdc-select-arrow,
-header.top-bar.header.mdc-button_label {
+header.top-bar.header.mdc-button_label,
+.cdk-overlay-connected-position-bounding-box .signed-in-user-details {
     color: #fff !important;
     fill: #fff;
 }
