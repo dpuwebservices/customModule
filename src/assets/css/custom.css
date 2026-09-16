@@ -112,6 +112,7 @@ body {
     --sys-on-secondary: #ffffff;
     --sys-on-tertiary: #ffffff;
     --sys-surface-container-lowest: #ffffff;
+    --sys-error: #ba1a1a;
 }
 
 /* Header Styles */
@@ -233,11 +234,12 @@ header.top-bar.header.mdc-button_label,
 #user-area-button svg path {
     fill: var(--sys-primary) !important;
 }
+
 /* set user area button text to blue and appear on top of the user area button */
 #user-area-button .ng-star-inserted {
-	color: var(--sys-primary) !important;
-	z-index: 2;
-	background-color: transparent;
+    color: var(--sys-primary) !important;
+    z-index: 2;
+    background-color: transparent;
 }
 
 /* define behavior of elements in header */
@@ -373,6 +375,26 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
     display: none !important;
 }
 
+
+/* availability color */
+.availability-code {
+    color: var(--validDark) !important;
+}
+
+/* frbr icon color */
+.mat-icon.frbr-list-icon-color svg>rect:first-of-type {
+    fill: var(--sys-primary);
+}
+
+/* frbr text color */
+.frbr-line-badge .mdc-button__label {
+    color: var(--sys-primary) !important;
+}
+
+/* not available color */
+.available-at-button[aria-label*="Not"] .ng-star-inserted {
+    color: var(--sys-error) !important;
+}
 
 
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
