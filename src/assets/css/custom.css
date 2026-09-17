@@ -417,7 +417,7 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
     border-color: var(--validDark) !important;
 }
 
-/* add border around availability buttons */
+/* add border around availability buttons
 nde-record-availability .available-at-button {
     border-radius: .3125rem;
     border: 1px solid var(--validDark);
@@ -425,6 +425,18 @@ nde-record-availability .available-at-button {
     padding-right: 1rem !important;
     margin-top: .25rem;
     height: 32px !important;
+} */
+
+nde-record-availability .availability-status {
+    border-radius: .3125rem;
+    border: 1px solid var(--validDark);
+    padding: .25rem 1rem;
+    margin-top: .25rem;
+    margin-right: 1rem;
+}
+
+nde-record-availability .availability-status:hover {
+    background-color: rgb(from var(--validDark) r g b / 0.05) ! important;
 }
 
 /* not available text color */
@@ -432,21 +444,25 @@ nde-record-availability .available-at-button[aria-label*="Not"] .ng-star-inserte
     color: var(--sys-error) !important;
 }
 
-/* not available border color */
-nde-record-availability .available-at-button[aria-label*="Not"] {
-    border-color: var(--sys-error) !important;
+/* border color for unavailable physical items */
+nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name*="Unavailable"]) {
+    border-color: var(--sys-outline) !important;
 }
 
-.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before {
-    opacity: var(--mat-text-button-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+/* hover color for unavailable physical items */
+nde-record-availability .availability-status:has(mat-icon[data-mat-icon-name*="Unavailable"]):hover {
+    background-color: rgb(from var(--sys-shadow) r g b / 0.05) !important;
 }
+
+/* suppress the system-default hover background around the inner element for physical items */
+/* replaced by hover background around outer element that contains the status indicator */
+nde-record-availability .availability-status.availability-status .mat-mdc-button-persistent-ripple::before {
+    opacity: 0;
+}
+
 
 .basic-button.mdc-button.mat-mdc-button:hover {
     --mat-text-button-state-layer-color: var(--validDark);
-}
-
-.basic-button.mdc-button.mat-mdc-button[aria-label*="Not"]:hover {
-    --mat-text-button-state-layer-color: var(--sys-error);
 }
 
 .basic-button.mdc-button.mat-mdc-button:hover .mdc-button__label {
