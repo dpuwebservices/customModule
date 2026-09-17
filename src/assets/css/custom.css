@@ -396,11 +396,73 @@ body:has(nde-back-to-top>button:not(.back-to-top-hide)):has(.side-bottom-buttons
     box-shadow: inset 0 -1px 0 0 var(--sys-primary) !important;
 }
 
-/* not available color */
-.available-at-button[aria-label*="Not"] .ng-star-inserted {
+.frbr-line-badge:hover {
+    background-color: rgb(from var(--sys-primary) r g b / 0.1) !important;
+    padding-right: 1em !important;
+    border-radius: .3125em;
+}
+
+/* background color on Available Online */
+.availability-container .mat-mdc-button .mat-mdc-button-persistent-ripple::before {
+    background-color: var(--validDark) !important;
+}
+
+/* color of Available Online text */
+.availability-container .mat-mdc-button:not(:disabled) {
+    color: var(--validDark) !important;
+}
+
+/* color of Available Online border */
+.availability-container .quicklink-button {
+    border-color: var(--validDark) !important;
+}
+
+/* add border around availability buttons */
+nde-record-availability .available-at-button {
+    border-radius: .3125rem;
+    border: 1px solid var(--validDark);
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+    margin-top: .25rem;
+    height: 32px !important;
+}
+
+/* not available text color */
+nde-record-availability .available-at-button[aria-label*="Not"] .ng-star-inserted {
     color: var(--sys-error) !important;
 }
 
+/* not available border color */
+nde-record-availability .available-at-button[aria-label*="Not"] {
+    border-color: var(--sys-error) !important;
+}
+
+.mat-mdc-button:active .mat-mdc-button-persistent-ripple::before {
+    opacity: var(--mat-text-button-pressed-state-layer-opacity, var(--mat-sys-pressed-state-layer-opacity));
+}
+
+.basic-button.mdc-button.mat-mdc-button:hover {
+    --mat-text-button-state-layer-color: var(--validDark);
+}
+
+.basic-button.mdc-button.mat-mdc-button[aria-label*="Not"]:hover {
+    --mat-text-button-state-layer-color: var(--sys-error);
+}
+
+.basic-button.mdc-button.mat-mdc-button:hover .mdc-button__label {
+    text-decoration: none;
+}
+
+/* fix hover color around newspaper search link */
+[data-qa="link-to-newspaper-search"] .mat-mdc-button {
+    border-radius: .3125rem;
+    padding-left: 1em !important;
+    padding-right: 1em !important;
+}
+
+[data-qa="link-to-newspaper-search"] .mat-mdc-button:hover {
+    text-decoration: underline;
+}
 
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
