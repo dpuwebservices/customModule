@@ -440,7 +440,7 @@ nde-record-availability .availability-status:hover {
 }
 
 /* not available text color */
-nde-record-availability .available-at-button[aria-label*="Not"] .ng-star-inserted {
+nde-record-availability .available-at-button[aria-label*="Not Available"] .ng-star-inserted {
     color: var(--sys-error) !important;
 }
 
