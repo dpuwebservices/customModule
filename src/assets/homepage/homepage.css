@@ -402,6 +402,7 @@
 .welcome-title, .announcements-item-title {
   font-weight: 500 !important;
 }
-.notificationBanner {
-  padding: 1rem 1rem .5rem 2.5rem;
+notificationBanner {
+  padding: 1rem 1rem .5rem .5rem;
+  text-align: center;
 }
