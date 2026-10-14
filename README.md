@@ -1,7 +1,22 @@
 # CustomModule
 
 ## Local Notes
-This repository contains local configurations of CustomModule within the src directory. To use this repository, you must copy in files from https://github.com/ExLibrisGroup/customModule (except .gitignore).
+This repository contains local configurations of CustomModule within the src directory. To use this repository, you must copy in files from https://github.com/ExLibrisGroup/customModule (except src/*, README.md, LICENSE, .gitignore, and .git):
+
+1. cd /path/to/parent/directory              # go to the parent directory for the local version of this repository
+2. gh repo clone dpuwebservices/customModule # clone this repository
+3. mkdir default                             # make a "default" directory for the Ex Libris code for customModule
+4. cd default                                # go to the default directory
+5. gh repo clone ExLibrisGroup/customModule  # clone the Ex Libris customModule repository
+6. cd ../customModule                        # go to the root of your local version of this repository
+7. rsync -av --exclude={ \                   # copy over the Ex Libris repository (excluding .git and this repository)
+      '.gitignore', \ 
+      'LICENSE', \
+      'README.md', \
+      'src/', \ 
+      '.git'} \
+      ../default/customModule/ .
+
 
 ## ✨ New Feature (9th November 2025): Support for all customization files in assets folder:
 All files that are you are able to customize through the assets folder of your customization package are now supported for preview when using the custom module in proxy mode.
