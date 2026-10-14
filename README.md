@@ -1,5 +1,8 @@
 # CustomModule
 
+## Local Notes
+This repository contains local configurations of CustomModule within the src directory. To use this repository, you must copy in files from https://github.com/ExLibrisGroup/customModule (except .gitignore).
+
 ## ✨ New Feature (9th November 2025): Support for all customization files in assets folder:
 All files that are you are able to customize through the assets folder of your customization package are now supported for preview when using the custom module in proxy mode.
 
