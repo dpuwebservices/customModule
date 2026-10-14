@@ -9,13 +9,13 @@ This repository contains local configurations of CustomModule within the src dir
 4. cd default                                # go to the default directory
 5. gh repo clone ExLibrisGroup/customModule  # clone the Ex Libris customModule repository
 6. cd ../customModule                        # go to the root of your local version of this repository
-7. rsync -av --exclude={ \                   # copy over the Ex Libris repository (excluding .git and this repository)
-      '.gitignore', \ 
-      'LICENSE', \
-      'README.md', \
-      'src/', \ 
-      '.git'} \
-      ../default/customModule/ .
+7. rsync -av \
+   --exclude='.gitignore' \
+   --exclude='LICENSE' \
+   --exclude='README.md' \
+   --exclude='src/' \
+   --exclude='.git' \
+   ../default/customModule/ .
 
 
 ## ✨ New Feature (9th November 2025): Support for all customization files in assets folder:
