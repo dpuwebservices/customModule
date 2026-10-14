@@ -16,6 +16,7 @@ This repository contains local configurations of CustomModule within the src dir
    --exclude='src/' \
    --exclude='.git' \
    ../default/customModule/ .
+8. Follow instructions below for setting up build environment, proxy, etc.
 
 
 ## ✨ New Feature (9th November 2025): Support for all customization files in assets folder:
