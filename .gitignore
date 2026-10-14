@@ -6,3 +6,7 @@
 
 # Exception: Everything in src
 !/src/
+
+# Exception: Repository metadata
+!README.md
+!LICENSE
