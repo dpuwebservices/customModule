@@ -1,23 +1,30 @@
 # CustomModule
 
 ## Local Notes
+The customModule needs node and angular v18. You can use nvm to set up node:
+
+1. Install nvm (using brew on a mac or installing from website)
+2. nvm install 18
+3. nvm use 18
+
 This repository contains local configurations of CustomModule within the src directory. To use this repository, you must copy in files from https://github.com/ExLibrisGroup/customModule (except src/*, README.md, LICENSE, .gitignore, and .git):
 
-1. cd /path/to/parent/directory              # go to the parent directory for the local version of this repository
-2. gh repo clone dpuwebservices/customModule # clone this repository
-3. mkdir default                             # make a "default" directory for the Ex Libris code for customModule
-4. cd default                                # go to the default directory
-5. gh repo clone ExLibrisGroup/customModule  # clone the Ex Libris customModule repository
-6. cd ../customModule                        # go to the root of your local version of this repository
-7. rsync -av \
-   --exclude='.gitignore' \
-   --exclude='LICENSE' \
-   --exclude='README.md' \
-   --exclude='src/' \
-   --exclude='.git' \
-   ../default/customModule/ .
-8. Follow instructions below for setting up build environment, proxy, etc.
+1. cd /path/to/parent/directory              # go to the parent directory for where you want to install this repository
+2. mkdir local                               # make a local subdirectory
+3. cd local                                  # go to the local directory
+4. gh repo clone dpuwebservices/customModule # clone this repository
+5. cd ..                                     # go to the parent directory
+6. gh repo clone ExLibrisGroup/customModule  # clone the Ex Libris customModule repository
+7. cd customModule                           # go to the default customModule root directory
+8. follow the instructions to get it running # get the default customModule running
+9. cp -rp ../local/customModule/src .        # copy the local src to the default
+10. cp ../local/customModule/.gitignore .    # copy the local .gitignore
+11. cp ../local/customModule/README.md .     # copy this file
+12. rm -rf .git                              # remove the Ex Libris .git data
+13. cp -rp ../local/customModule/.git .      # copy this repository's git data
+14. use the instructions below to set up the proxy.const.mjs and build-settings.env files
 
+You should now be able to use npm run start:proxy to start the localhost:4201 server
 
 ## ✨ New Feature (9th November 2025): Support for all customization files in assets folder:
 All files that are you are able to customize through the assets folder of your customization package are now supported for preview when using the custom module in proxy mode.
