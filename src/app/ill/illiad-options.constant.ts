@@ -1,6 +1,6 @@
 export const illiadOptions = {
-  groups: [/* Add Alma user group codes here - ie. 'ALUM','UNDGRDUR'*/],
-  remoteScript: 'https://mydomain.com/illiad.php',
+  groups: ['FS','GR','LE','LS','UG'/* Add Alma user group codes here - ie. 'ALUM','UNDGRDUR'*/],
+  remoteScript: 'https://libservices.org/illiadapi/illiad.php',
   boxTitle: 'Interlibrary Loan',
-  illiadURL: 'https://illiad.<Your Institution>/<OCLC SYMBOL>/illiad.dll',
+  illiadURL: 'https://depaullib.illiad.oclc.org/illiad/illiad.dll',
 };
