@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 export interface IllRequestData {
   title: string;
   author: string;
+  status: string;
+  type: string;
   count: number;
 }
 
@@ -15,8 +17,12 @@ export interface IllRequestData {
   template: `
     <div>
       <div>
+        <p>Request Type: {{ item.type }}</p>
         <p>Title: {{ item.title }}</p>
         <p>Author: {{ item.author }}</p>
+        @if (item.status) {
+          <p>Status: {{ item.status }} </p>
+        }
       </div>
     </div>
   `

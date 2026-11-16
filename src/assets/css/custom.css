@@ -480,6 +480,11 @@ nde-record-availability .availability-status.availability-status .mat-mdc-button
     text-decoration: underline;
 }
 
+.notificationBanner {
+  padding: 1rem 1rem .5rem .5rem;
+  text-align: center;
+}
+
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
 

@@ -5,6 +5,7 @@ import { Observable } from 'rxjs';
 export interface IlliadData {
   Articles: any[];
   Requests: any[];
+  Physical: any[];
   data: any[];
 
 }

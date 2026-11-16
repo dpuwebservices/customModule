@@ -4,12 +4,13 @@ import { IllService } from '../services/ill-service';
 import { IllUserService } from '../services/ill-user-service';
 import { IllArticleComponent, IllArticleData } from './ill-article.component';
 import { IllRequestComponent, IllRequestData } from './ill-request.component';
+import { IllPhysicalComponent, IllPhysicalData } from './ill-physical.component';
 import { illiadOptions } from './illiad-options.constant';
 
 @Component({
   selector: 'ill-loans-overview',
   standalone: true,
-  imports: [CommonModule, IllArticleComponent, IllRequestComponent, NgIf, NgFor],
+  imports: [CommonModule, IllArticleComponent, IllRequestComponent, IllPhysicalComponent, NgIf, NgFor],
   templateUrl: './ill-loans-overview.component.html',
   styleUrl: './ill-loans-overview.component.scss'
 })
@@ -20,6 +21,7 @@ export class IllLoansOverviewComponent implements OnInit {
 
   articles: IllArticleData[] = [];
   requests: IllRequestData[] = [];
+  physicals: IllPhysicalData[] = [];
 
   isLoading = true;
   illPermitted = true;
@@ -42,6 +44,7 @@ export class IllLoansOverviewComponent implements OnInit {
       this.illService.getILLiadData(url, this.user!).subscribe(response => {
         this.articles = Object.values(response.Articles || {});
         this.requests = Object.values(response.Requests || {});
+        this.physicals = Object.values(response.Physical || {});
         this.isLoading = false;
       });
     } else {

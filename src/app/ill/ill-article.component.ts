@@ -6,6 +6,7 @@ export interface IllArticleData {
   title: string;
   jtitle: string;
   author: string;
+  status: string;
   count: number;
   expires: string;
 }
@@ -21,6 +22,9 @@ export interface IllArticleData {
           Title: <a [href]="item.url" target="_blank">{{ item.title }}</a>
         </p>
         <p>Author: {{ item.author }}</p>
+        @if (item.status) {
+          <p>Status: {{ item.status }}</p>
+        }
         <p>Expires: {{ item.expires }}.</p>
       </div>
     </div>

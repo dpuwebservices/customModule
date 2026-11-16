@@ -1,5 +1,5 @@
-<div style="padding-top:5.2em;padding-left:16px;" *ngIf="illPermitted">
-<div class="ill-card">
+<div style="padding-bottom:2em;" *ngIf="illPermitted">
+<div class="ill-card" style="background-color: var(--sys-inverse-on-surface); border-color: var(--sys-primary);">
   <!-- Loading State -->
   <div style="padding:1.5em;height:100%;width:100%;" *ngIf="isLoading">Loading data...</div>
   <!-- Content -->
@@ -7,11 +7,12 @@
     <div class="ill-card-header">
       <div class="ill-card-title">{{ boxTitle }}</div>
     </div>
-    <div class="ill-card-content">
+    <div class="ill-card-content" style="font-size: 0.875em;">
       <!-- Globe Icon -->
       <div class="ill-card-logo">
         <!-- SVG logo -->
-<svg fill="#333333" height="89px" width="89px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#333333">
+<!-- <svg fill="#333333" height="89px" width="89px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="#333333"> -->
+<svg fill="var(--sys-primary)" height="40px" width="40px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 511.999 511.999" xml:space="preserve" stroke="var(--sys-primary)">
   <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
   <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
   <g id="SVGRepo_iconCarrier"> <g> 
@@ -21,6 +22,7 @@
 
       </div>
       <!-- Requests -->
+      <hr />
             <p><strong>Pending Requests</strong></p>
       <ng-container *ngIf="hasItems(requests); else noRequests">
         <ill-request *ngFor="let request of requests" [item]="request"></ill-request>
@@ -32,10 +34,18 @@
       <ng-container *ngIf="hasItems(articles); else noArticles">
         <ill-article *ngFor="let article of articles" [item]="article"></ill-article>
       </ng-container>
-      <ng-template #noArticles>You have no articles.</ng-template>
+      <ng-template #noArticles>You have no articles. </ng-template>
+      <hr />
+      <!-- Loans -->
+      <p><strong>My ILL Loans</strong></p>
+      <ng-container *ngIf="hasItems(physicals); else noPhysical">
+        <ill-physical *ngFor="let physical of physicals" [item]="physical"></ill-physical>
+      </ng-container>
+      <ng-template #noPhysical>You have no loans. </ng-template>
+      <hr />
       <!-- Link -->
-      <a [href]="illiadURL" target="_blank">Log into your ILL account</a>
-      <span> for more information and to place requests.</span>
+      <p><a [href]="illiadURL" target="_blank">Log into your ILL account</a>
+      <span> for more information and to place requests.</span></p>
     </div>
           <br/>
   </div>
