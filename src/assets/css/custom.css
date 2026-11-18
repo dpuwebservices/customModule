@@ -497,12 +497,22 @@ nde-account-overview .cards-row-second-section > .account-card-wrapper > nde-fav
   flex: 1;
 }
 
+nde-account-overview .cards-row-second-section > .account-card-wrapper > nde-favorites-overview,
+nde-account-overview .cards-row-second-section > .account-card-wrapper > ng-component {
+  padding-bottom: 2em;
+}
+
+nde-account-overview .cards-row-second-section > .account-card-wrapper > nde-favorites-overview > mat-card,
+nde-account-overview .cards-row-second-section > .account-card-wrapper > ng-component div:not(ng-component div ~ div):not(ng-component div div) {
+  height: 100%;
+}
+
 /* hide this (to fix gap issues in second row) */
 nde-account-overview nde-overview-section {
   display: none;
 }
 
-/* make cards-column in second row not display (to allow left-hand box to fill row) */
+/* make cards-column in second row not display (hide right-hand box to allow left-hand box to fill row) */
 nde-account-overview .cards-row-second-section > .cards-column {
   display: none !important;
 }
