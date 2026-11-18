@@ -492,6 +492,12 @@ nde-account-overview .cards-row-second-section > .account-card-wrapper {
   gap: 1rem;
 }
 
+nde-account-overview .cards-row-second-section > .account-card-wrapper > ng-component, 
+nde-account-overview .cards-row-second-section > .account-card-wrapper > nde-favorites-overview {
+  flex: 1;
+}
+
+/* hide this (to fix gap issues in second row) */
 nde-account-overview nde-overview-section {
   display: none;
 }
