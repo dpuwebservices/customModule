@@ -3,7 +3,7 @@ import { SpringshareEquipmentOverviewComponent } from '../springshare/springshar
 // Define the map
 export const selectorComponentMap = new Map<string, any>([
 
-['nde-favorites-overview-before', IllLoansOverviewComponent]
+['nde-favorites-overview-before', IllLoansOverviewComponent],
 ['nde-favorites-overview-after', SpringshareEquipmentOverviewComponent]
 
 ]);
