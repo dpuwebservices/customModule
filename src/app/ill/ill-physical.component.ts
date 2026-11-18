@@ -5,6 +5,7 @@ export interface IllPhysicalData {
   title: string;
   author: string;
   status: string;
+  dueDate: string;
   type: string;
   count: number;
 }
@@ -22,6 +23,9 @@ export interface IllPhysicalData {
         <p>Author: {{ item.author }}</p>
         @if (item.status) {
           <p>Status: {{ item.status }} </p>
+        }
+        @if (item.dueDate) {
+          <p>Due Date: {{ item.dueDate }} </p>
         }
       </div>
     </div>
