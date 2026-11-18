@@ -485,6 +485,22 @@ nde-record-availability .availability-status.availability-status .mat-mdc-button
   text-align: center;
 }
 
+/* make second row of account info display horizontally */
+nde-account-overview .cards-row-second-section > .account-card-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+nde-account-overview nde-overview-section {
+  display: none;
+}
+
+/* make cards-column in second row not display (to allow left-hand box to fill row) */
+nde-account-overview .cards-row-second-section > .cards-column {
+  display: none !important;
+}
+
 /* trying to fix spacing and prevent overlap in the header banner at various resolutions */
 @media (min-width: 1280px) {
 
